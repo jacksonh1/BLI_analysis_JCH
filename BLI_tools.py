@@ -4,7 +4,7 @@ import pandas as pd
 pd.options.plotting.backend = "plotly"
 import plotly.graph_objects as go
 import plotly.express as px
-plt.style.use('custom_standard')
+# plt.style.use('custom_standard')
 # plt.style.use('custom_small')
 
 
