@@ -271,7 +271,7 @@ class BLI_data_df:
         return ax
 
     def find_nearest(self, array, value):
-        idx = (np.abs(array-value)).argmin()
+        idx = np.argmin(np.abs(array-value))
         return idx
 
     def df_average(self, col, start):
