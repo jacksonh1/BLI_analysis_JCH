@@ -163,7 +163,7 @@ class BLI_data_df:
         self.sample_wells = wells
 
     def find_nearest(self, array, value):
-        idx = (np.abs(array-value)).argmin()
+        idx = np.argmin(np.abs(array-value))
         return idx
 
     def baseline_zero(self, col, start, end):
